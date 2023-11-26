@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhangziyuan</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+.header{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image:url(top.png);
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+}
+.header_flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 32%    ;
+    width: 600px;
+    height: 50px;
+    position: relative;
+}
+.header_box{
+    top: 10px;
+    position: inherit;
+    /* background-color: white; */
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+.header_box1{
+    background-image: url(topred.png);
+    background-size: 100% 60px;
+    position: inherit;
+    width: 170px;
+    height: 60px;
+}
+.welcome_background{
+    top: 30px;
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-color: #eae7e8;
+}
+.welcome{
+    left: 27%;
+    top: 30px; ;
+    position: relative;
+    width: 800px;
+    height: 320px;
+    background-color: white;
+    border: 0.5px solid grey;
+    display: flex;
+    flex-direction: row;
+}
+.welcome_img{
+    width: 300px;
+    height: 320px;
+    background-image: url(write.png);
+    background-size: 100% 320px;
+
+}
+.welcome_textarea{
+    left: 10%;
+    height: 10%;
+    width: 500px;
+    height: 320px;
+    background-color: #ffffff;
+
+}
+.welcome_h1{
+    padding: 40px 35px;
+    width: 400px;
+    height: 70px;
+    font:normal bold 40px 'Britannic Bold';
+}
+.welcome_p{
+    padding: 0 35px;
+    line-height: 20px;
+    width: 400px;
+    height: 80px;
+    line-height: 10PX;
+    font:normal normal 15px '宋体';
+}
+.welcome_vedio{
+    left: 60px;
+    bottom: -50px;
+    position: absolute;
+    width:250px;
+    height: 150px;
+    /* background-color:#ef4d82; */
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.vediob{
+    left: 165px;
+    bottom: 10px;
+    position: absolute;
+    background-image: url(播放.png);
+    width: 40px;
+    height: 30px;
+    background-size: 100% 30px;
+}
+.lamy_series{
+    position: relative;
+    top: 200px;
+    left: 24%;
+    width: 900px;
+    height: 600px;
+    /* background-color:steelblue; */
+}
+.lamy_series_title{
+    position: relative;
+    left: 35%;
+    width: 250px;
+    height: 60px;
+    background-image: url(LAMY.png);
+    background-size: 100% 60px;
+}
+.lamy_series_flex{
+    top:100px;
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    /* background-color: skyblue; */
+    width: 900px;
+    height: 350px;
+}
+.lamy_box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /* background-color: red; */
+}
+.boxtitle{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    /* background-color: skyblue; */
+    font:20px '微软雅黑';
+    text-align: center;
+}
+.box_text{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* background-color: springgreen; */
+    font:16px '微软雅黑';
+    text-align: center;
+}
+.lamy_series_button{
+
+    padding: 15px 10px 15px 0;
+    font:30px '微软雅黑';
+    position: absolute;
+    top: 530px;
+    left: 37%;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color:black ;
+}
+.lamy_series_a{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-image: url(jiantou.png);
+    background-repeat: no-repeat;
+    top: 155px;
+    left: 54%;
+}
+.twopan{
+    top: 200px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #eae7e8;
+}
+.rtwopan{
+    left: 24%;
+    position: relative;
+    width: 900px;
+    height: 200px;
+    background-image: url(twopan.png);
+    background-size: 100% 200px;
+}
+.remark_background{
+    top: 200px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url(remarkbackground.png);
+    background-size: 100% 200px;
+    
+}
+.remarkbox{
+    position: relative;
+    left: 36%;
+    top: 100px;
+    width: 500px;
+    height: 170px;
+    background-color: white;
+    border: 0.5px solid grey;
+}
+.remarkimg1{
+    top: 10px;
+    position: relative;
+    left: 44%;
+    width: 50px;
+    height: 50px;
+    background-image: url(people.png);
+    background-size: 100% 50px;
+
+}
+
+.remark{
+    top: 10px;
+    position: relative;
+    width: 500px;
+    height: 90px;
+    font: 12px '微软雅黑';
+    text-align: center;
+
+}
+.remarkimg2{
+    top: 10px;
+    left: 24%;
+    position: relative;
+    width: 250px;
+    height: 10px;
+    background-image: url(shengluexian\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 10px;
+
+}
+.show1{
+    top: 270px;
+    position: relative;
+    width: 100%;
+    height:900px ;
+    
+}
+.showtitle{
+    position: relative;
+    top: 100px;
+    left: 45%;
+    width: 200px;
+    height: 100px;
+}
+.showtitle1{
+    position: relative;
+    left: 25%;
+    height: 50px;
+    width: 100px;
+    background-image: url(Choose.png);
+    background-size: 100% 50px;
+}
+.showtitle2{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    background-image: url(Our\ products.png);
+    background-size: 100% 50px;
+}
+.showing{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: 600px;
+    width: 600px;
+}
+.showingbox{
+    margin: 10px;
+    padding: 0;
+    top: 100px;
+    left: 26%;
+    display: inline-block;
+    position: relative;
+    height: 590px;
+    width: 250px ;
+}
+.box1_1{
+    position: relative;
+    width: 250px;
+    height:200px;
+    background-image: url(pic1_1.png);
+    margin-bottom:10px ;
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+}
+.box1_2{
+    position: relative;
+    width: 250px;
+    height:380px;
+    background-image: url(pic1_2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 380px;
+}
+.box2_1{
+    position: relative;
+    width: 250px;
+    height:400px;
+    background-image: url(pic2_1.png);
+    margin-bottom:10px ;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+.box2_2{
+    position: relative;
+    width: 250px;
+    height:180px;
+    background-image: url(pic2_2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 180px;
+}
+.box3_1{
+    position: relative;
+    width: 250px;
+    height:220px;
+    background-image: url(pic3_1.png);
+    margin-bottom:10px ;
+    background-repeat: no-repeat;
+    background-size: 100% 220px;
+}
+.box3_2{
+    position: relative;
+    width: 250px;
+    height:360px;
+    background-image: url(pic3_2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 360px;
+}
+.showa{
+    padding: 5px 0 0 0;
+    position: relative;
+    top: 100px;
+    left: 45%;
+    width: 200px;
+    height: 50px;
+    background-color: #4a3e42;
+    color: white;
+    font:30px '微软雅黑';
+}
+.showaj{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url(jiantou2.png);
+    top: -32px;
+    left: 78%;
+
+}
+.show2{
+    margin-top: -5px;
+    top: 270px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #55534b;
+}
+.showing2{
+    top: 60px;
+    left: 28%;
+    position: relative;
+    width: 750px;
+    height: 310px;
+    background-color: white;
+    border: 0.5px solid grey;
+}
+.page{
+    padding: 0;
+    top:20px;
+    position: relative;
+    widows: 730px;
+    height: 90px;
+    margin:5px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.page1_img{
+    position: relative;
+    height: 90px;
+    width: 300px;
+    background-image: url(png1png.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+}
+.page2_img{
+    position: relative;
+    height: 90px;
+    width: 300px;
+    background-image: url(png2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+}
+.page3_img{
+    position: relative;
+    height: 90px;
+    width: 300px;
+    background-image: url(png3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+}
+.page_text1{
+    margin: 0 0 0 10px;
+    position: relative;
+    height: 90px;
+    width: 430px;
+    background-image: url(png_t1.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90px;
+}
+.page_text2{
+    margin: 0 0 0 10px;
+    position: relative;
+    height: 90px;
+    width: 430px;
+    background-image: url(png_t2.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90px;
+}
+.page_text3{
+    margin: 0 0 0 10px;
+    position: relative;
+    height: 90px;
+    width: 430px;
+    background-image: url(png_t3.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90px;
+}
+.enda2{
+    top: 270px;
+    position: relative;
+    height: 230px;
+    width: 100%;
+}
+.a2{
+    padding: 8px 0 0 15px;
+    left: 45%;
+    top: 190px;
+    position: relative;
+    bottom: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #e8024d;
+    color: white;
+    font: bold 30px '宋体';
+}
+.ja2{
+    left: 75%;
+    top: -35px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(jiantou.png);
+    background-repeat: no-repeat;
+    background-size: 100% 40px;
+}
+.end{
+    top: 290px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(end.png);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+.endless{
+    top:290px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #535353;
+}
+.endtxt{
+    position: relative;
+    text-align: center;
+    font: 20px   '宋体';
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_flex">
+            <div class="header_box">新品推荐</div>
+            <div class="header_box">在线购买产品</div>
+            <div class="header_box1"></div>
+            <div class="header_box">企业礼包</div>
+            <div class="header_box">品牌介绍</div>
+        </div>
+    </div>
+    <div class="welcome_background">
+        <div class="welcome">
+            <div class="welcome_img">
+            </div>
+            <div class="welcome_textarea">
+                <div class="welcome_h1">
+                Welcome to Lamy
+                </div>
+                <div class="welcome_p">
+                    德国书写工具品牌LAMY始创人C•Josef Lamy于1930年在海德堡创立了欧瑟斯墨水笔制造厂.1952年，崭露头角的LAMY 流线型墨水笔，震撼问世, 彰显公司的创新敏锐触觉。1966年终于打
+                </div>
+                <div class="welcome_p">
+                造出令人耳目一新的现代经典之作-LAMY 2000系列。产品撮合
+                了聚碳酸酯与不锈钢材质，绝妙的配搭，使之从芸芸众生的书写
+                工具中脱颖而出，时至今日，依然在市场具有影响力。
+                </div>
+            </div>
+            <div class="welcome_vedio">
+            </div>
+            <div class="vediob">
+            </div>
+            .
+        </div>
+    </div>
+    <div class="lamy_series">
+        <div class="lamy_series_title">
+
+        </div>
+        <div class="lamy_series_flex">
+            <span class="lamy_box">
+                <div class="boxtitle" >【恒星系列 墨水笔 】</div>
+                <div class="box_text">LAMY 恒星系列延续了 LAMY<br>
+                的时尚造型，打造出锦上添花的极致品质<br>
+                。此系列全部均由氧化<br>
+                独特的凹陷式笔握以及弹性铜线笔夹<br>
+                富的颜色让 LAMY 恒星系列突破了传统<br>
+                散发着无限的青春魅力。<br>
+</div>
+            </span>
+            <span class="lamy_box">
+                <div class="boxtitle">【狩猎系列限量色墨水笔 】</div>
+                <div class="box_text">色彩丰富，颜色亮丽，不仅是可以作为书<br>
+                写工具，同样是很好的装饰品<br>
+                宽大的笔夹设计，可随时夹在包带、牛仔裤、<br>
+                T恤袖口上，让您感受创意方便的携带方式<br>
+                笔身通体材质采用车用强力ABS材料</div>
+            </span>
+            <span class="lamy_box">
+                <div class="boxtitle">【喜悦系列美术笔 】</div>
+                <div class="box_text">用以绘图、写艺术字、艺术签名<br>
+                扁平状的笔尖设计，适合书写艺术字<br>
+                立体感极佳.1、1.5、1.9三种笔尖可供选择<br>
+                ，可书写粗细不等的立体字，让您随时<br>
+                感受变化的乐趣复古的笔杆设计<br>
+                ，经典又与众不同，显示出独特的欣赏品味</div>
+            </span>
+        </div>
+        <div class="lamy_series_button">&nbsp;&nbsp;了解详情
+
+        </div>
+    </div>
+    <div class="lamy_series_a">
+    
+    </div>
+    <div class="twopan"> 
+        <div class="rtwopan"></div>
+    </div>
+    <div class="remark_background">
+        <div class="remarkbox">
+            <div class="remarkimg1"></div>
+            <div class="remark">使用令人难以置信的生产技术和坚持极高水平的精准要求，仅使用一种<br>
+            材质，也足以成就出这款永恒的设计。产品本身是体现不同加工程序和<br>
+            制造工艺。手工打磨的亚光拉丝表面充分体现了品牌对细节的注重。</div>
+            <div class="remarkimg2"></div>
+        </div>
+    </div>
+    <div class="show1">
+        <div class="showtitle">
+            <div class="showtitle1"></div>
+            <div class="showtitle2"></div>
+        </div>
+        <div class="showimg">
+            <div class="showingbox">  
+                <div class="box1_1"></div>
+                <div class="box1_2"></div>
+            </div>
+            <div class="showingbox">
+                <div class="box2_1"></div>
+                <div class="box2_2"></div>
+            </div>
+            <div class="showingbox">
+                <div class="box3_1"></div>
+                <div class="box3_2"></div>
+            </div>
+        </div>
+        <div class="showa" >&nbsp;&nbsp;戳我速购
+            <div class="showaj"></div>
+        </div>
+    </div>
+    <div class="show2">
+        <div class="showing2">
+            <div class="page">
+                <div class="page1_img"></div>
+                <div class="page_text1"></div>
+            </div>
+            <div class="page">
+                <div class="page2_img"></div>
+                <div class="page_text2"></div>
+            </div>
+            <div class="page">
+                <div class="page3_img"></div>
+                <div class="page_text3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enda2">
+        <div class="a2">新品推荐
+            <div class="ja2">
+            </div>
+        </div>
+    </div>
+    <div class="end"></div>
+    <div class="endless">
+        <div class="endtxt">© 凌美中国 2015 版权所有 不得转载</div>
+    </div>
+</body>
+</html>
