@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    margin-left: 10px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.box {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 1060px;
+    background-image: url(image/background.png);
+
+}
+.header{
+    position: relative;
+    height: 114px;
+}
+.returnbox{
+    position: relative;
+    float: left;
+    margin: 32px 190px 0 0;
+    width: 50px;
+    height: 50px;
+}
+.headertext{
+    position: relative;
+    float: left;
+    height: 50px;
+    font: 32px "[Lato]";
+    line-height: 114px;
+    color: #cee8ea;
+
+}
+.gantanhaobox{
+    position: relative;
+    float: right;
+    margin-top: 32px;
+    width: 50px;
+    height: 50px;
+}
+.photo{
+    position: relative;
+    width: 600px;
+    height: 200px;
+}
+.photo .img{
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    top:50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: url(image/userimg.png);
+    cursor: pointer;
+}
+.user{
+    position: relative;
+    margin: 0 auto;
+    width: 450px;
+    height: 361px;
+}
+.Firstname{
+    position:relative;
+    height: 89px;
+    border-bottom:#859bc1 solid 1px ;
+}
+.Firstmanetext{
+    float: left;
+    height: 89px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 89px;
+}
+.Firstname .text{
+    float: left;
+    height: 89px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 89px;
+}
+.Lastname{
+    position: relative;
+    height: 89px;
+    border-bottom: #859bc1 solid 1px;
+}
+.Lastnametext{
+    float: left;
+    height: 89px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 89px;
+}
+.Lastname .text{
+    float: left;
+    height: 89px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 89px;
+}
+.Email{
+    position: relative;
+    height: 89px;
+    border-bottom: #859bc1 solid 1px;
+}
+.Emailtext{
+    float: left;
+    height: 89px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 89px;
+}
+.Email .text{
+    float: left;
+    width: 280px;
+    height: 89px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 89px;
+    font-size: 15px;
+}
+.Password{
+    position: relative;
+    height: 90px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 90px;
+}
+.Password .word{
+    float: left;
+}
+.Password .text{
+    float: left;
+    height: 90px;
+    width: 270px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 90px;
+}
+.Password .show{
+    float: right;
+    color: #3dfcb5;
+    text-decoration: none;
+    
+}
+.Sign{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bottom{
+    position: relative;
+    width: 450px;
+    height: 75px;
+    background-color: #ffffff;
+    border-radius: 37.5px;
+    margin-top: 37.5px;
+    margin-left: 75px;
+    line-height: 75px;
+}
+.bottomtext{
+    position: relative;
+    left: 50%;
+    margin-left: -55px;
+    font-size: 33px;
+    color: #706d9f;
+}
+.end{
+    position: relative;
+    height: 30px;
+
+}
+.end .text{
+    float: left;
+    margin-left: 32%;
+    color: #e0e0ec;
+}
+.end .ta{
+    float: left;
+    color: #3dfcb5;
+    text-decoration: none;
+}
